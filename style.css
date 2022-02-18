@@ -1,0 +1,115 @@
+/* Ganeral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #2e79ba;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-size: .6em;
+    background: #081f37;
+    color: #fff;
+    padding: 2rem;
+    text-transform: uppercase;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80vh;
+}
+
+#main > * {
+    margin-top: 4rem;
+}
+
+/* Utility class */
+.dNone {
+    display: none;
+}
+
+.dflex {
+    display: flex;
+}
+
+/* Styling Layout */
+.scoreboard-container {
+    width: 70%;
+    display:flex;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.game-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game-container > .game-options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.game-container > .game-options > button {
+    margin: 0 1rem;
+    padding: .8rem 1.5rem;
+    font-size: 1.5em;
+    border: none;
+    background: #1e549f;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.game-container > .game-options > button:hover {
+    transform: scale(1.1)
+}
+
+.game-result {
+    margin-top: 1rem;
+}
+
+.fa-hand-back-fist,
+.fa-hand,
+.fa-hand-scissors {
+    pointer-events: none;
+}
+
+
+@media screen and (min-width: 767px) {
+    header {
+        font-size: .8em;
+    }
+    .scoreboard-container {
+        width: 60%;
+        padding: 2rem;
+    }
+    .scoreboard-container > .score {
+        font-size: 1.2em;
+    }
+    .game-container > .game-options > button {
+        padding: 1.2rem 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .scoreboard-container {
+        width: 50%;
+    }
+  }

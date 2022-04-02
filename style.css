@@ -60,6 +60,10 @@ header {
     flex-direction: column;
 }
 
+.game-container > .result {
+    font-size: 1.2em;
+}
+
 .game-container > .game-options {
     display: flex;
     justify-content: space-around;
@@ -75,6 +79,7 @@ header {
     background: #1e549f;
     color: #fff;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .game-container > .game-options > button:hover {
@@ -103,12 +108,19 @@ header {
     .scoreboard-container > .score {
         font-size: 1.2em;
     }
+    .game-container > .result {
+        font-size: 1.3em;
+    }
     .game-container > .game-options > button {
         padding: 1.2rem 2rem;
     }
 }
 
 @media screen and (min-width: 1024px){
+    .game-container > .result {
+        font-size: 1.5em;
+    }
+    
     .scoreboard-container {
         width: 50%;
     }
